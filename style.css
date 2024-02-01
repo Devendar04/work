@@ -1,0 +1,521 @@
+@font-face {
+    font-family: freight;
+    src: url(./assets/Freight\ Big\ Pro\ Light\ Italic.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "frieght";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background: #000;
+    overflow: hidden;
+}
+
+.nav {
+    width: 91.5%;
+    position: absolute;
+    padding: 25px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -6px;
+    overflow: hidden;
+    left: 35px;
+    top: 8px;
+
+}
+
+#a a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    background: #000;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: all 0.2s;
+
+}
+
+#a a:hover::after {
+    transform: scaleX(1);
+    height: 1px;
+}
+
+#a {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-right: -309px;
+
+}
+
+#a a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #000;
+
+}
+
+#a ion-icon {
+    position: absolute;
+    right: -14px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+
+.loader {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 99;
+    display: none;
+}
+
+.loader h1 {
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 6.5vw;
+    font-weight: 100;
+    line-height: 11vh;
+    letter-spacing: -3px;
+    z-index: 9;
+}
+
+.loader video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 6;
+}
+
+.nav2 {
+    width: 100%;
+    position: absolute;
+    padding: 25px 60px;
+    z-index: 8;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a2 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.a2 a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.a2 ion-icon {
+    width: 50px;
+    height: 40px;
+}
+
+
+.yellow1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #F5E41B;
+    z-index: 8;
+}
+
+.yellow2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #F5E41B;
+    z-index: 7;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #F5E41B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -20%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.main-footer h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0px 50px;
+}
+
+.main-footer ion-icon {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.main-footer2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 27px;
+    z-index: 8;
+}
+
+.main-footer2 h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0px 50px;
+}
+
+.main-footer2 ion-icon {
+    width: 100px;
+    height: 40px;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.page1 h1 {
+    font-size: 6.5vw;
+    font-weight: 100;
+    line-height: 11vh;
+    letter-spacing: -3px;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.elem {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.elem h2 {
+    position: relative;
+    font-size: 6vw;
+    font-weight: 100;
+    line-height: 4.7vw;
+    transition: all ease-out 0.8s;
+    z-index: 10;
+}
+
+.elem h2:hover {
+    font-style: italic;
+}
+
+.elem .blur {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 32.5%;
+    top: 0%;
+    transform: translateX(-50%, -50%);
+    background: linear-gradient(#f5e31bdc, #F5E41B, #f5e31bed);
+    box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+    z-index: 8;
+}
+
+.elem .moving {
+    width: 100%;
+    background-color: #F5E41B;
+    white-space: nowrap;
+    color: #000;
+    padding: 5px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) scaleY(0);
+    transition: all ease-out 0.2s;
+    overflow: hidden;
+}
+
+.elem:hover .moving {
+    transform: translate(0, -50%) scaleY(1);
+}
+
+.elem .moving .moving-in {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.elem .moving .moving-in h5 {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-right: 40px;
+    transition: all ease-out 0.5s;
+    transition-delay: 0.17s;
+    opacity: 0;
+}
+
+.elem:hover .moving h5 {
+    opacity: 1;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.image-container1 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 25px;
+    margin-bottom: 18vh;
+}
+
+.image-div {
+    height: 480px;
+    width: 380px;
+    position: relative;
+    overflow: hidden;
+    top: 30px;
+    cursor: pointer;
+
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    object-position: top;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #0000002e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    transition: all ease 0.3s;
+    z-index: 10;
+}
+
+.overlay p {
+    font-size: 3.5vw;
+    line-height: 3vw;
+    font-weight: 100;
+    opacity: 0;
+}
+
+.image-div:hover .overlay {
+    background: #000;
+}
+
+.image-div:hover .overlay p {
+    opacity: 1;
+}
+
+.image-div:hover img {
+    scale: 1.2;
+}
+
+#footer {
+    width: 100%;
+    height: 34vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+
+.upper { 
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 3px solid #fff;
+    animation: float 3s ease-in-out infinite;
+    
+}
+
+.upper h2 {
+    font-size: 1.4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.upper ion-icon {
+    width: 100px;
+    height: 30px;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.lower {
+    width: 100%;
+    height: 70%;
+    background: #000;
+    display: flex;
+}
+
+.left {
+    position: relative;
+    width: 25%;
+    color: #fff;
+}
+
+.blank {
+    width: 35%;
+}
+
+.right {
+    width: 40%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left a,
+.right a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left a {
+    position: relative;
+    top: 40%;
+    left: 20%;
+
+}
+
+.right a {
+    position: relative;
+
+}
+
+.left a::after,.right a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    background: #fff;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: all 0.2s;
+
+}
+
+.left a:hover::after ,.right a:hover::after {
+    transform: scaleX(1);
+
+}
