@@ -95,7 +95,6 @@ body {
     text-align: center;
     color: white;
     z-index: 99;
-    display: none;
 }
 
 .loader h1 {
