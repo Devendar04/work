@@ -415,8 +415,8 @@ body {
 
 }
 
-.upper { 
-    position: absolute;
+.upper {
+    position: relative;
     width: 100%;
     height: 40%;
     display: flex;
@@ -426,7 +426,7 @@ body {
     background: #fff;
     border: 3px solid #fff;
     animation: float 3s ease-in-out infinite;
-    
+
 }
 
 .upper h2 {
@@ -441,6 +441,7 @@ body {
     width: 100px;
     height: 30px;
 }
+
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -454,6 +455,7 @@ body {
         transform: translateY(0);
     }
 }
+
 .lower {
     width: 100%;
     height: 70%;
@@ -480,8 +482,7 @@ body {
     justify-content: space-around;
 }
 
-.left a,
-.right a {
+.left a,.right a {
     color: #fff;
     font-size: 17px;
     text-decoration: none;
@@ -500,7 +501,8 @@ body {
 
 }
 
-.left a::after,.right a::after {
+.left a::after,
+.right a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -514,7 +516,8 @@ body {
 
 }
 
-.left a:hover::after ,.right a:hover::after {
+.left a:hover::after,
+.right a:hover::after {
     transform: scaleX(1);
 
 }

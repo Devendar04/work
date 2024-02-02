@@ -95,7 +95,13 @@ function loco() {
         ease: "exp0.in"
     }, 'lo');
 
-
+    document.querySelector(".main-footer ion-icon").addEventListener("click", () => {
+        locoScroll.scrollTo(586)
+    })
+    document.querySelector(".upper h2").addEventListener("click", () => {
+        locoScroll.scrollTo(0)
+    })
+    
     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
@@ -164,21 +170,6 @@ function loader() {
 
 }
 loader()
-
-
-
-
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
-
-document.querySelector(".main-footer ion-icon").addEventListener("click", () => {
-    scroll.scrollTo(586)
-})
-document.querySelector(".upper h2").addEventListener("click", () => {
-    scroll.scrollTo(0)
-})
 
 
 var elems = document.querySelectorAll(".elem")
