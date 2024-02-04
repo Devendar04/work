@@ -177,7 +177,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    bottom: -20%;
+    bottom: -25.9%;
     animation: float 3s ease-in-out infinite;
 }
 
