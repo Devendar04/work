@@ -12,13 +12,104 @@
 </head>
 
 <body>
+
+    <style>
+        @media ( width < 750px) {
+            .nav {
+                left: 10px;
+            }
+
+            #a a {
+                display: none;
+            }
+
+            .page1 {
+                height: 80vh;
+            }
+
+            .page1 h1 {
+                margin-top: 30px;
+                font-size: 33px;
+                line-height: 30px;
+            }
+
+            .main-footer h2 {
+                padding: 0px 25px;
+            }
+
+            .main-footer ion-icon {
+                width: 40px;
+                height: 25px;
+            }
+
+            .page2 {
+                height: 110vh;
+            }
+
+            .elem h2 {
+                font-size: 13vw;
+                line-height: 12.8vw;
+            }
+
+            .page3 {
+                flex-direction: column;
+            }
+
+            .image-container1 {
+              gap: 10px;
+              
+            }
+            .image-container1:nth-child(2){
+                margin-top: -67px;
+                margin-left: 10px;
+            
+            }
+            .image-container1:nth-child(3){
+                margin-top: -67px;
+            }
+            .image-div {
+                width: 95vw;
+                height: 460px;
+                top: 10px;
+                right: 15px;
+            }
+            #footer{
+                height: 60vh;
+            }
+            .upper{
+                height: 30%;
+            }
+            .upper h2{
+                font-size: 18px;
+            }
+            .lower{
+                height: 80%;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .right{
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 1vw;
+            }
+            .left a,.right a{
+                font-size: 4vw;
+            }
+            .left a{
+                left: -7.6vw;
+            }
+        }
+    </style>
+
     <div class="loader">
 
         <div class="yellow1"></div>
         <div class="yellow2"></div>
         <video autoplay loop muted src="./assets/video/4_version1_200911_024106.mp4"></video>
 
-        
+
         <div class="nav2">
             <svg class="core-logo" xmlns="http://www.w3.org/2000/svg" width="94" height="21" viewBox="0 0 94 21">
                 <path fill="#fff"
@@ -54,7 +145,7 @@
         </svg>
         <div id="a">
 
-            <a href="#" >PRODUCT</a>
+            <a href="#">PRODUCT</a>
             <a href="#" class="op">ABOUT</a>
             <a href="#" class="op">STUDIES</a>
             <a href="#" class="op">STORE</a>
@@ -63,7 +154,7 @@
     </div>
 
     <div id="main">
-        <div class="page1" data-scroll data-scroll-speed="-2">
+        <div class="page1" data-scroll data-scroll-speed="-1">
             <h1>
                 CREATIVE
                 PROFESSIONALS<br><em>DEDICATED</em> TO CULTURAL<br>ADVANCEMENT THROUGH<br><em>STRATEGY</em> AND
@@ -278,63 +369,67 @@
                 </div>
             </div>
             <div class="image-container1" style="padding: 0px 15px;">
-                <div class="image-div" style="width: 400px; height: 520px; ">
+                <div class="image-div" style=" height: 520px; @media (min-width: 400px) {
+                 width: 380px;   
+                } 
+                    
+                " >
                     <div class="overlay">
                         <p>JOHN ELLIOT <em>SCENES FROM NEPAL</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/john-elliott-nepal/26169/21_john-elliott-nepal_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px;">
+                <div class="image-div">
                     <div class="overlay">
                         <p>L.E.D. STUDIO <em>WEBSITE</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/led-studio/26053/thumbnail_230526_162436_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px; height: 490px;">
+                <div class="image-div" style=" height: 490px;">
                     <div class="overlay">
                         <p>'JEEN-YUHS' <br> <em> FLIM IDENTITY</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/jeen-yuhs/13608/jeen-yuhs-Film-Identity-Thumbnail_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px;">
+                <div class="image-div">
                     <div class="overlay">
                         <p>CONVERSE <em>BASKETBALL EXPLORATIONS</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/converse-basketball-explorations/10270/Converse-Basketball-Explorations-Typography-Cover_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px; height: 300px;">
+                <div class="image-div" style=" height: 300px;">
                     <div class="overlay">
                         <p>NARS <br> SUSANNE <em>BARTSCH ZINE</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/nars-x-susanne-bartsch/9181/Nars-Susanne-Bartsch-Zine-Collage_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px;">
+                <div class="image-div" >
                     <div class="overlay">
                         <p>VERSACE <br> TRIGRECA <em> IDENTITY</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/versace-trigerca-identity/9928/Versace-Trigreca-Identity-Photography-Black-01_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px; height: 280px;">
+                <div class="image-div" style=" height: 280px;">
                     <div class="overlay">
                         <p>HERON <br>PRESTON <br> <em> WEBSITE</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/heron-preston-website/9194/Heron-Preston-Website-Thumbnail_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px; height: 390px;">
+                <div class="image-div" style=" height: 390px;">
                     <div class="overlay">
                         <p>RESHAPE <em>IDENTITY</em></p>
                     </div>
                     <img src="https://works.studio/assets/imager/images/reshape-identity/2769/Reshape-Identity-Logo-Blue_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
                         alt="">
                 </div>
-                <div class="image-div" style=" width:400px; height: 240px;">
+                <div class="image-div" style=" height: 240px;">
                     <div class="overlay">
                         <p>PELOTON TREAD <em>FLIM</em></p>
                     </div>
@@ -416,7 +511,7 @@
             </div>
         </div>
         <div id="footer">
-            <div class="upper" >
+            <div class="upper">
                 <ion-icon name="chevron-up-outline"></ion-icon>
                 <h2> BACK TO TOP</h2>
             </div>
