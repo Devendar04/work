@@ -29,7 +29,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: -6px;
     overflow: hidden;
     left: 35px;
     top: 8px;
@@ -94,7 +93,6 @@ body {
     text-align: center;
     color: white;
     z-index: 99;
-    display: none;
 }
 
 .loader h1 {
